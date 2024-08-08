@@ -1,15 +1,40 @@
-from typing import Dict
-from stella_types import Type
+from typing import Dict, Optional, List
+
 
 class Context:
     def __init__(self):
-        self.symbol_table: Dict[str, Type] = {}
-        self.has_main: bool = False
+        self.variables: Dict[str, 'Value'] = {}
+        self.functions: Dict[str, 'FunctionDef'] = {}
 
-class Errors:
-    UNEXPECTED_TYPE_FOR_PARAMETER = 'ERROR_UNEXPECTED_TYPE_FOR_PARAMETER'
-    UNEXPECTED_TYPE_FOR_EXPRESSION = 'ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION'
-    UNEXPECTED_LAMBDA = 'ERROR_UNEXPECTED_LAMBDA'
-    NOT_A_FUNCTION = 'ERROR_NOT_A_FUNCTION'
-    UNDEFINED_VARIABLE = 'ERROR_UNDEFINED_VARIABLE'
-    MISSING_MAIN = 'ERROR_MISSING_MAIN'
+    def add_variable(self, name: str, value: 'Value'):
+        if name in self.variables:
+            raise ValueError(f"Variable '{name}' is already defined")
+        self.variables[name] = value
+
+    def get_variable(self, name: str) -> 'Value':
+        if name not in self.variables:
+            raise ValueError(f"Variable '{name}' is not defined")
+        return self.variables[name]
+
+    def add_function(self, name: str, function: 'FunctionDef'):
+        if name in self.functions:
+            raise ValueError(f"Function '{name}' is already defined")
+        self.functions[name] = function
+
+    def get_function(self, name: str) -> 'FunctionDef':
+        if name not in self.functions:
+            raise ValueError(f"Function '{name}' is not defined")
+        return self.functions[name]
+
+
+class Value:
+    def __init__(self, value: Optional[int] = None):
+        self.value = value
+
+
+class FunctionDef:
+    def __init__(self, name: str, params: List[str], body: 'Expr'):
+        self.name = name
+        self.params = params
+        self.body = body
+
