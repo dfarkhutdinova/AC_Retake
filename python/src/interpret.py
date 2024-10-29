@@ -13,6 +13,7 @@ ERROR_UNDEFINED_VARIABLE = "ERROR_UNDEFINED_VARIABLE"
 ERROR_MISSING_MAIN = "ERROR_MISSING_MAIN"
 ERROR_NOT_A_TUPLE = "ERROR_NOT_A_TUPLE"
 ERROR_UNEXPECTED_TUPLE = "ERROR_UNEXPECTED_TUPLE"
+ERROR_TUPLE_INDEX_OUT_OF_BOUNDS = "ERROR_TUPLE_INDEX_OUT_OF_BOUNDS"
 ERROR_NOT_A_RECORD = "ERROR_NOT_A_RECORD"
 ERROR_UNEXPECTED_FIELD_ACCESS = "ERROR_UNEXPECTED_FIELD_ACCESS"
 ERROR_UNEXPECTED_RECORD = "ERROR_UNEXPECTED_RECORD"
@@ -24,12 +25,14 @@ ERROR_UNEXPECTED_PATTERN_FOR_TYPE = "ERROR_UNEXPECTED_PATTERN_FOR_TYPE"
 ERROR_UNEXPECTED_INJECTION = "ERROR_UNEXPECTED_INJECTION"
 ERROR_NONEXHAUSTIVE_MATCH_PATTERNS = "ERROR_NONEXHAUSTIVE_MATCH_PATTERNS"
 ERROR_UNEXPECTED_LIST = "ERROR_UNEXPECTED_LIST"
+ERROR_AMBIGUOUS_LIST_TYPE = "ERROR_AMBIGUOUS_LIST_TYPE"
 ERROR_AMBIGUOUS_VARIANT_TYPE = "ERROR_AMBIGUOUS_VARIANT_TYPE"
 ERROR_UNEXPECTED_VARIANT = "ERROR_UNEXPECTED_VARIANT"
 ERROR_UNEXPECTED_VARIANT_LABEL = "ERROR_UNEXPECTED_VARIANT_LABEL"
 ERROR_EXCEPTION_TYPE_NOT_DECLARED = "ERROR_EXCEPTION_TYPE_NOT_DECLARED"
 ERROR_NOT_A_REFERENCE = "ERROR_NOT_A_REFERENCE"
 ERROR_AMBIGUOUS_REFERENCE_TYPE = "ERROR_AMBIGUOUS_REFERENCE_TYPE"
+ERROR_INCORRECT_NUMBER_OF_ARGUMENTS = "ERROR_INCORRECT_NUMBER_OF_ARGUMENTS"
 
 
 type_env = {}
@@ -292,10 +295,12 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                 arg_type = handle_expr_context(ctx.expr(1))
 
                 if isinstance(func_type.param_types[0], SumType):
+                    if func_type.param_types[0].left_type is None or func_type.param_types[0].right_type is None:
+                        type_error(ERROR_AMBIGUOUS_SUM_TYPE)
                     if not (isinstance(arg_type, SumType) or arg_type == func_type.param_types[0]):
                         type_error(ERROR_UNEXPECTED_TYPE_FOR_PARAMETER)
                 elif arg_type != func_type.param_types[0]:
-                    type_error(ERROR_UNEXPECTED_TYPE_FOR_PARAMETER)
+                    type_error(ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION)
 
             return func_type.return_type if not isinstance(func_type.return_type, FunType) else func_type.return_type
 
@@ -364,7 +369,7 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
 
             index = int(ctx.INTEGER().getText()) - 1
             if index < 0 or index >= len(tuple_expr_type.elem_types):
-                type_error(ERROR_UNEXPECTED_TUPLE)
+                type_error(ERROR_TUPLE_INDEX_OUT_OF_BOUNDS)
 
             return tuple_expr_type.elem_types[index]
 
@@ -443,8 +448,10 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                 ascribed_type = parse_type(ctx.parentCtx.stellatype())
 
             if ascribed_type is not None and isinstance(ascribed_type, SumType):
+                if ascribed_type.right_type is None:
+                    type_error(ERROR_AMBIGUOUS_SUM_TYPE)
                 return SumType(expr_type, ascribed_type.right_type)
-            else:
+            elif ascribed_type is None:
                 return SumType(expr_type, None)
 
         case stellaParser.InrContext():
@@ -454,8 +461,10 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                 ascribed_type = parse_type(ctx.parentCtx.stellatype())
 
             if ascribed_type is not None and isinstance(ascribed_type, SumType):
+                if ascribed_type.left_type is None:
+                    type_error(ERROR_AMBIGUOUS_SUM_TYPE)
                 return SumType(ascribed_type.left_type, expr_type)
-            else:
+            elif ascribed_type is None:
                 return SumType(None, expr_type)
 
         case stellaParser.MatchContext():
@@ -553,7 +562,7 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
             if not isinstance(expr_type, ListType):
                 type_error(ERROR_NOT_A_LIST)
             if expr_type.elem_type is None:
-                type_error(ERROR_UNEXPECTED_LIST)
+                type_error(ERROR_AMBIGUOUS_LIST_TYPE)
             return BoolType()
 
         case stellaParser.ParenthesisedExprContext():
@@ -609,13 +618,13 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                 type_error(ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION)
 
             if len(expr_type.param_types) != 1:
-                type_error("Fix expression requires a function with exactly one parameter")
+                type_error(ERROR_INCORRECT_NUMBER_OF_ARGUMENTS)
 
             return_type = expr_type.return_type
             param_type = expr_type.param_types[0]
 
             if return_type != param_type:
-                type_error("Return type of the function inside fix does not match its parameter type")
+                type_error(ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION)
 
             return return_type
 
@@ -919,7 +928,7 @@ def main(argv):
     program = parser.program()
 
     # print("AST:")
-    print_ast(program)
+    #print_ast(program)
 
     handle_program_context(program)
 
