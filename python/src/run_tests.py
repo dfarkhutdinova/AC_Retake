@@ -20,7 +20,7 @@ def run_tests_in_dir(dir_path, expected_success=True, results_file=None):
     results = []
 
     for root, _, files in os.walk(dir_path):
-        for file in files:
+        for file in sorted(files):
             if file.endswith(".stella"):
                 file_path = os.path.join(root, file)
                 return_code, stdout, stderr = run_test(file_path)
@@ -29,7 +29,9 @@ def run_tests_in_dir(dir_path, expected_success=True, results_file=None):
                     results.append(f"Тест {file} пройден успешно.")
                     passed_tests += 1
                 elif not expected_success and return_code != 0:
-                    results.append(f"Тест {file} правильно вызвал ошибку.")
+                    # Выводим последнюю строку из stderr для информации об ошибке
+                    error_message = stderr.strip().splitlines()[-1] if stderr.strip() else "Ошибка не указана"
+                    results.append(f"Тест {file} правильно вызвал ошибку: {error_message}")
                     passed_tests += 1
                 else:
                     if expected_success:

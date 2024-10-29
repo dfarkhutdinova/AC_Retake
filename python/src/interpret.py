@@ -33,6 +33,9 @@ ERROR_EXCEPTION_TYPE_NOT_DECLARED = "ERROR_EXCEPTION_TYPE_NOT_DECLARED"
 ERROR_NOT_A_REFERENCE = "ERROR_NOT_A_REFERENCE"
 ERROR_AMBIGUOUS_REFERENCE_TYPE = "ERROR_AMBIGUOUS_REFERENCE_TYPE"
 ERROR_INCORRECT_NUMBER_OF_ARGUMENTS = "ERROR_INCORRECT_NUMBER_OF_ARGUMENTS"
+ERROR_ILLEGAL_EMPTY_MATCHING = "ERROR_ILLEGAL_EMPTY_MATCHING"
+ERROR_AMBIGUOUS_PANIC_TYPE = "ERROR_AMBIGUOUS_PANIC_TYPE"
+ERROR_AMBIGUOUS_THROW_TYPE = 'ERROR_AMBIGUOUS_THROW_TYPE'
 
 
 type_env = {}
@@ -279,11 +282,14 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
         case stellaParser.VarContext():
             name = ctx.name.text
             if name not in type_env:
-                type_error(f"{ERROR_UNDEFINED_VARIABLE}: Variable '{name}' is not defined in the current scope.")
+                type_error(ERROR_AMBIGUOUS_VARIANT_TYPE)
             return type_env[name]
 
         case stellaParser.ApplicationContext():
             func_type = handle_expr_context(ctx.expr(0))
+
+            if isinstance(func_type, PanicType):
+                type_error(ERROR_AMBIGUOUS_PANIC_TYPE)
 
             if not isinstance(func_type, FunType):
                 type_error(ERROR_NOT_A_FUNCTION)
@@ -450,8 +456,12 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
             if ascribed_type is not None and isinstance(ascribed_type, SumType):
                 if ascribed_type.right_type is None:
                     type_error(ERROR_AMBIGUOUS_SUM_TYPE)
+                if expr_type != ascribed_type.left_type:
+                    type_error(ERROR_UNEXPECTED_INJECTION)
                 return SumType(expr_type, ascribed_type.right_type)
-            elif ascribed_type is None:
+            else:
+                if expr_type is None:
+                    type_error(ERROR_AMBIGUOUS_SUM_TYPE)
                 return SumType(expr_type, None)
 
         case stellaParser.InrContext():
@@ -463,16 +473,26 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
             if ascribed_type is not None and isinstance(ascribed_type, SumType):
                 if ascribed_type.left_type is None:
                     type_error(ERROR_AMBIGUOUS_SUM_TYPE)
+                if expr_type != ascribed_type.right_type:
+                    type_error(ERROR_UNEXPECTED_INJECTION)
                 return SumType(ascribed_type.left_type, expr_type)
-            elif ascribed_type is None:
+            else:
+                if expr_type is None:
+                    type_error(ERROR_AMBIGUOUS_SUM_TYPE)
                 return SumType(None, expr_type)
 
         case stellaParser.MatchContext():
             expr_type = handle_expr_context(ctx.expr())
 
             match_cases = ctx.matchCase()
+            if not match_cases:
+                type_error("ERROR_ILLEGAL_EMPTY_MATCHING")
+
             if len(match_cases) < 2:
                 type_error(ERROR_NONEXHAUSTIVE_MATCH_PATTERNS)
+
+            # if len(match_cases) == 0:
+            #     type_error(ERROR_ILLEGAL_EMPTY_MATCHING)
 
             if isinstance(expr_type, SumType):
                 inl_case, inr_case = ctx.matchCase()
@@ -505,7 +525,7 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                 for match_case in match_cases:
                     label = match_case.pattern().label.text
                     if label not in expr_type.fields:
-                        type_error(ERROR_UNEXPECTED_VARIANT_LABEL)
+                        type_error(ERROR_UNEXPECTED_PATTERN_FOR_TYPE)
 
                     expected_type = expr_type.fields[label]
                     var_name = match_case.pattern().pattern().getText()
@@ -563,6 +583,8 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
 
         case stellaParser.IsEmptyContext():
             expr_type = handle_expr_context(ctx.expr())
+            if isinstance(expr_type, PanicType):
+                type_error(ERROR_AMBIGUOUS_PANIC_TYPE)
             if not isinstance(expr_type, ListType):
                 type_error(ERROR_NOT_A_LIST)
             if expr_type.elem_type is None:
@@ -590,7 +612,7 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                 type_error(ERROR_AMBIGUOUS_VARIANT_TYPE)
 
             if label not in ascribed_type.fields:
-                type_error(ERROR_UNEXPECTED_VARIANT_LABEL)
+                type_error(ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION)
 
             expected_type = ascribed_type.fields[label]
             print(f"Expected type for label '{label}': {expected_type}")
@@ -658,12 +680,18 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
 
         case stellaParser.PanicContext():
             print("Detected panic expression")
+            if isinstance(ctx.parentCtx,
+                          (stellaParser.ApplicationContext, stellaParser.ListContext, stellaParser.MatchContext)):
+                type_error(ERROR_AMBIGUOUS_PANIC_TYPE)
             return PanicType()
 
         case stellaParser.ThrowContext():
             print("Handling throw expression")
             exception_expr_type = handle_expr_context(ctx.expr())
             print(f"Throwing expression type: {exception_expr_type}")
+
+            if isinstance(ctx.parentCtx, stellaParser.ApplicationContext):
+                type_error(ERROR_AMBIGUOUS_THROW_TYPE)
 
             print(f"Exception environment: {exception_env}")
 

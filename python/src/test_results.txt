@@ -1,299 +1,299 @@
 Результаты тестов:
 
 Запуск тестов в директории: tests/records/well-typed
-Тест records-7.stella пройден успешно.
-Тест records-5.stella пройден успешно.
 Тест records-1.stella пройден успешно.
-Тест records-3.stella пройден успешно.
-Тест records-6.stella пройден успешно.
-Тест records-4.stella пройден успешно.
-Тест records-8.stella пройден успешно.
 Тест records-2.stella пройден успешно.
+Тест records-3.stella пройден успешно.
+Тест records-4.stella пройден успешно.
+Тест records-5.stella пройден успешно.
+Тест records-6.stella пройден успешно.
+Тест records-7.stella пройден успешно.
+Тест records-8.stella пройден успешно.
 
 Запуск тестов в директории: tests/records/ill-typed
-Тест bad-records-2.stella правильно вызвал ошибку.
-Тест bad-records-14.stella правильно вызвал ошибку.
-Тест bad-records-18.stella правильно вызвал ошибку.
-Тест bad-records-20.stella правильно вызвал ошибку.
-Тест bad-records-16.stella правильно вызвал ошибку.
-Тест bad-records-12.stella правильно вызвал ошибку.
-Тест bad-records-4.stella правильно вызвал ошибку.
-Тест bad-records-8.stella правильно вызвал ошибку.
-Тест bad-records-10.stella правильно вызвал ошибку.
-Тест bad-records-6.stella правильно вызвал ошибку.
-Тест bad-records-15.stella правильно вызвал ошибку.
-Тест bad-records-19.stella правильно вызвал ошибку.
-Тест bad-records-3.stella правильно вызвал ошибку.
-Тест bad-records-23.stella правильно вызвал ошибку.
-Тест bad-records-17.stella правильно вызвал ошибку.
-Тест bad-records-21.stella правильно вызвал ошибку.
-Тест bad-records-1.stella правильно вызвал ошибку.
-Тест bad-records-5.stella правильно вызвал ошибку.
-Тест bad-records-9.stella правильно вызвал ошибку.
-Тест bad-records-13.stella правильно вызвал ошибку.
-Тест bad-records-7.stella правильно вызвал ошибку.
+Тест bad-records-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-10.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-12.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-13.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-14.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-15.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_RECORD
+Тест bad-records-16.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_FIELD_ACCESS
+Тест bad-records-17.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_FIELD_ACCESS
+Тест bad-records-18.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_FIELD_ACCESS
+Тест bad-records-19.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_FIELD_ACCESS
+Тест bad-records-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_FIELD_ACCESS
+Тест bad-records-20.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-21.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-records-23.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_RECORD
+Тест bad-records-6.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-records-7.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-records-8.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-records-9.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_RECORD
 
 Запуск тестов в директории: tests/variants/well-typed
-Тест variants-2.stella пройден успешно.
 Тест variants-1.stella пройден успешно.
+Тест variants-2.stella пройден успешно.
 Тест variants-3.stella пройден успешно.
 
 Запуск тестов в директории: tests/variants/ill-typed
-Тест unexpected-pattern-match-1.stella правильно вызвал ошибку.
-Тест unexpected-variant-2.stella правильно вызвал ошибку.
-Тест unexpected-type-of-expression-4.stella правильно вызвал ошибку.
-Тест ambiguous-variant-type-3.stella правильно вызвал ошибку.
-Тест undefined-variable-1.stella правильно вызвал ошибку.
-Тест unexpected-variable-label-2.stella правильно вызвал ошибку.
-Тест ambiguous-variant-type-1.stella правильно вызвал ошибку.
-Тест unexpected-type-of-expression-2.stella правильно вызвал ошибку.
-Тест unexpected-variant-3.stella правильно вызвал ошибку.
-Тест unexpected-pattern-match-2.stella правильно вызвал ошибку.
-Тест unexpected-variant-1.stella правильно вызвал ошибку.
-Тест unexpected-type-of-expression-with-alternative-errors.stella правильно вызвал ошибку.
-Тест ambiguous-variant-type-2.stella правильно вызвал ошибку.
-Тест unexpected-variable-label-1.stella правильно вызвал ошибку.
-Тест unexpected-type-of-expression-1.stella правильно вызвал ошибку.
-Тест unexpected-type-of-expression-3.stella правильно вызвал ошибку.
+Тест ambiguous-variant-type-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест ambiguous-variant-type-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест ambiguous-variant-type-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест undefined-variable-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест unexpected-pattern-match-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест unexpected-pattern-match-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест unexpected-type-of-expression-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-of-expression-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-of-expression-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-of-expression-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-of-expression-with-alternative-errors.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-variable-label-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест unexpected-variable-label-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-variant-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест unexpected-variant-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест unexpected-variant-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
 
 Запуск тестов в директории: tests/core/well-typed
-Тест simple-succ.stella пройден успешно.
-Тест my-well-typed-2.stella пройден успешно.
-Тест logical-operators.stella пройден успешно.
-Тест inner-if.stella пройден успешно.
 Тест abstract-function.stella пройден успешно.
-Тест factorial.stella пройден успешно.
-Тест negate.stella пройден успешно.
-Тест higher-order-2.stella пройден успешно.
-Тест good-if-2.stella пройден успешно.
-Тест shadowed-variable-2.stella пройден успешно.
-Тест good-if.stella пройден успешно.
 Тест added-test-1.stella пройден успешно.
-Тест good-succ-2.stella пройден успешно.
-Тест nested.stella пройден успешно.
-Тест applying-actual-function-3.stella пройден успешно.
-Тест increment_twice.stella пройден успешно.
-Тест increment-triple.stella пройден успешно.
-Тест my-good-succ.stella пройден успешно.
+Тест added-test-2.stella пройден успешно.
 Тест apply-increase.stella пройден успешно.
-Тест simple-types.stella пройден успешно.
+Тест applying-actual-function-3.stella пройден успешно.
+Тест bool-to-nat.stella пройден успешно.
+Тест cubes.stella пройден успешно.
+Тест double-application.stella пройден успешно.
+Тест factorial.stella пройден успешно.
+Тест good-if-2.stella пройден успешно.
+Тест good-if.stella пройден успешно.
+Тест good-succ-1.stella пройден успешно.
+Тест good-succ-2.stella пройден успешно.
+Тест higher-order-1.stella пройден успешно.
+Тест higher-order-2.stella пройден успешно.
+Тест if-funcs.stella пройден успешно.
+Тест increment-triple.stella пройден успешно.
+Тест increment_twice.stella пройден успешно.
+Тест inner-if.stella пройден успешно.
+Тест logical-operators.stella пройден успешно.
 Тест many-if.stella пройден успешно.
 Тест my-good-if.stella пройден успешно.
-Тест cubes.stella пройден успешно.
+Тест my-good-succ.stella пройден успешно.
 Тест my-well-typed-1.stella пройден успешно.
+Тест my-well-typed-2.stella пройден успешно.
+Тест nat-to-bool.stella пройден успешно.
+Тест negate.stella пройден успешно.
+Тест nested.stella пройден успешно.
+Тест shadowed-variable-2.stella пройден успешно.
+Тест simple-if.stella пройден успешно.
+Тест simple-succ.stella пройден успешно.
+Тест simple-types.stella пройден успешно.
 Тест squares.stella пройден успешно.
 Тест succ-with-func.stella пройден успешно.
-Тест nat-to-bool.stella пройден успешно.
-Тест double-application.stella пройден успешно.
-Тест added-test-2.stella пройден успешно.
-Тест bool-to-nat.stella пройден успешно.
-Тест good-succ-1.stella пройден успешно.
-Тест higher-order-1.stella пройден успешно.
-Тест if-funcs.stella пройден успешно.
-Тест simple-if.stella пройден успешно.
 Тест test-1.stella пройден успешно.
 Тест test-2.stella пройден успешно.
 Тест test-1.stella пройден успешно.
 Тест test-1.stella пройден успешно.
 Тест test-2.stella пройден успешно.
 Тест test-1.stella пройден успешно.
+Тест test-2.stella пройден успешно.
 Тест test-3.stella пройден успешно.
-Тест test-2.stella пройден успешно.
 
 Запуск тестов в директории: tests/core/ill-typed
-Тест undefined-variable-3.stella правильно вызвал ошибку.
-Тест undefined-variable-1.stella правильно вызвал ошибку.
-Тест bad-if-and-undefined-variable-1.stella правильно вызвал ошибку.
-Тест undefined-variable-2.stella правильно вызвал ошибку.
-Тест applying-non-function-1.stella правильно вызвал ошибку.
-Тест applying-non-function-3.stella правильно вызвал ошибку.
-Тест shadowed-variable-2.stella правильно вызвал ошибку.
-Тест my-factorial.stella правильно вызвал ошибку.
-Тест applying-non-function-2.stella правильно вызвал ошибку.
-Тест not-a-function-1.stella правильно вызвал ошибку.
-Тест if-funcs.stella правильно вызвал ошибку.
-Тест shadowed-variable-1.stella правильно вызвал ошибку.
-Тест bad-succ-3.stella правильно вызвал ошибку.
-Тест bad-abstraction.stella правильно вызвал ошибку.
-Тест nat__rec-parameters.stella правильно вызвал ошибку.
-Тест bad-succ-1.stella правильно вызвал ошибку.
-Тест bad-if-1.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-1.stella правильно вызвал ошибку.
-Тест my-mismatch.stella правильно вызвал ошибку.
-Тест bad-nat-rec-1.stella правильно вызвал ошибку.
-Тест bad-iszero.stella правильно вызвал ошибку.
-Тест my-ill-test-2.stella правильно вызвал ошибку.
-Тест bad-if-3.stella правильно вызвал ошибку.
-Тест bad-factorial.stella правильно вызвал ошибку.
-Тест argument-type-mismatch-1.stella правильно вызвал ошибку.
-Тест bad-nat-2.stella правильно вызвал ошибку.
-Тест function-mismatch.stella правильно вызвал ошибку.
-Тест bad-higher-order-1.stella правильно вызвал ошибку.
-Тест my-ill-typed-1.stella правильно вызвал ошибку.
-Тест added-test-2.stella правильно вызвал ошибку.
-Тест bad-squares-2.stella правильно вызвал ошибку.
-Тест bad-nat-rec-2.stella правильно вызвал ошибку.
-Тест bad-return-type.stella правильно вызвал ошибку.
-Тест application-param-type.stella правильно вызвал ошибку.
-Тест if-funcs.stella правильно вызвал ошибку.
-Тест bad-if-2.stella правильно вызвал ошибку.
-Тест missing-main-2.stella правильно вызвал ошибку.
-Тест missing-main-1.stella правильно вызвал ошибку.
-Тест bad-nat-1.stella правильно вызвал ошибку.
-Тест argument-type-mismatch-2.stella правильно вызвал ошибку.
-Тест added-test-1.stella правильно вызвал ошибку.
-Тест invalid-not_.stella правильно вызвал ошибку.
-Тест argument-type-mismatch-3.stella правильно вызвал ошибку.
-Тест invalid-nat.stella правильно вызвал ошибку.
-Тест unexpected-type-for-parameter-1.stella правильно вызвал ошибку.
-Тест if-funcs.stella правильно вызвал ошибку.
-Тест test-1.stella правильно вызвал ошибку.
-Тест test-3.stella правильно вызвал ошибку.
-Тест test-4.stella правильно вызвал ошибку.
-Тест test-2.stella правильно вызвал ошибку.
-Тест bad-factorial-2.stella правильно вызвал ошибку.
-Тест bad-factorial-1.stella правильно вызвал ошибку.
-Тест test-7.stella правильно вызвал ошибку.
-Тест bad-cmp-2.stella правильно вызвал ошибку.
-Тест bad-add-1.stella правильно вызвал ошибку.
-Тест test-1.stella правильно вызвал ошибку.
-Тест bad-cmp-6.stella правильно вызвал ошибку.
-Тест bad-cmp-4.stella правильно вызвал ошибку.
-Тест bad-multiply-1.stella правильно вызвал ошибку.
-Тест test-3.stella правильно вызвал ошибку.
-Тест test-6.stella правильно вызвал ошибку.
-Тест bad-cmp-1.stella правильно вызвал ошибку.
-Тест bad-cmp-3.stella правильно вызвал ошибку.
-Тест test-4.stella правильно вызвал ошибку.
-Тест bad-logic-or-1.stella правильно вызвал ошибку.
-Тест test-2.stella правильно вызвал ошибку.
-Тест bad-cmp-5.stella правильно вызвал ошибку.
-Тест bad-logic-and-1.stella правильно вызвал ошибку.
-Тест test-5.stella правильно вызвал ошибку.
-Тест test-1.stella правильно вызвал ошибку.
-Тест test-3.stella правильно вызвал ошибку.
-Тест test-4.stella правильно вызвал ошибку.
-Тест test-2.stella правильно вызвал ошибку.
-Тест test-1.stella правильно вызвал ошибку.
-Тест test-2.stella правильно вызвал ошибку.
-Тест bad-function-call.stella правильно вызвал ошибку.
-Тест my-ill-typed-2.stella правильно вызвал ошибку.
-Тест bad-squares-1.stella правильно вызвал ошибку.
-Тест bad-succ-2.stella правильно вызвал ошибку.
-Тест bad-if-4.stella правильно вызвал ошибку.
-Тест unexpected-lambda-1.stella правильно вызвал ошибку.
-Тест if-funcs.stella правильно вызвал ошибку.
+Тест bad-if-and-undefined-variable-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест undefined-variable-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест undefined-variable-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест undefined-variable-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест applying-non-function-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест applying-non-function-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест applying-non-function-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест if-funcs.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест my-factorial.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест not-a-function-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест shadowed-variable-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест shadowed-variable-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест added-test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест application-param-type.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест argument-type-mismatch-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-abstraction.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-factorial.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-higher-order-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-if-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-if-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-if-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-iszero.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-nat-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-nat-rec-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-nat-rec-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-return-type.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-squares-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-succ-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-succ-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест function-mismatch.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест if-funcs.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест my-ill-test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест my-ill-typed-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест my-mismatch.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест nat__rec-parameters.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест missing-main-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_MISSING_MAIN
+Тест missing-main-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_MISSING_MAIN
+Тест added-test-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест argument-type-mismatch-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест argument-type-mismatch-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-nat-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест if-funcs.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест invalid-nat.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест invalid-not_.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-parameter-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-factorial-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-factorial-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-add-1.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-cmp-1.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-cmp-2.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-cmp-3.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-cmp-4.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-cmp-5.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-cmp-6.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-logic-and-1.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-logic-or-1.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест bad-multiply-1.stella правильно вызвал ошибку: TYPE ERROR: Unsupported expression
+Тест test-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-6.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-7.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER
+Тест test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_PARAMETER
+Тест bad-function-call.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-if-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-squares-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-succ-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест if-funcs.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест my-ill-typed-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-lambda-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 
 Запуск тестов в директории: tests/lists/well-typed
-Тест lists-3.stella пройден успешно.
-Тест lists-1.stella пройден успешно.
 Тест empty-list.stella пройден успешно.
+Тест lists-1.stella пройден успешно.
 Тест lists-2.stella пройден успешно.
+Тест lists-3.stella пройден успешно.
 
 Запуск тестов в директории: tests/lists/ill-typed
-Тест bad-variants-1.stella правильно вызвал ошибку.
-Тест unexpected-list-natrec.stella правильно вызвал ошибку.
-Тест unexepected-list-unit.stella правильно вызвал ошибку.
-Тест unexpected-list-pair.stella правильно вызвал ошибку.
-Тест bad-lists-2.stella правильно вызвал ошибку.
-Тест not-a-list-head.stella правильно вызвал ошибку.
-Тест unexpected-list-let-bindings.stella правильно вызвал ошибку.
-Тест unexpected-list-if-condition.stella правильно вызвал ошибку.
-Тест not-a-list-tail.stella правильно вызвал ошибку.
-Тест not-a-list-isempty.stella правильно вызвал ошибку.
-Тест unexpected-empty-list.stella правильно вызвал ошибку.
-Тест ambiguous-list-type-isempty.stella правильно вызвал ошибку.
-Тест bad-lists-1.stella правильно вызвал ошибку.
+Тест ambiguous-list-type-isempty.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_LIST_TYPE
+Тест bad-lists-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-lists-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-variants-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест not-a-list-head.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_LIST
+Тест not-a-list-isempty.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_LIST
+Тест not-a-list-tail.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_LIST
+Тест unexepected-list-unit.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-empty-list.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-list-if-condition.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-list-let-bindings.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-list-natrec.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-list-pair.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 
 Запуск тестов в директории: tests/references/well-typed
-Тест refs-3.stella пройден успешно.
 Тест refs-1.stella пройден успешно.
-Тест refs-4.stella пройден успешно.
 Тест refs-2.stella пройден успешно.
+Тест refs-3.stella пройден успешно.
+Тест refs-4.stella пройден успешно.
 
 Запуск тестов в директории: tests/references/ill-typed
-Тест not-a-reference-1.stella правильно вызвал ошибку.
-Тест not-a-reference-3.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-1.stella правильно вызвал ошибку.
-Тест unexpected-memory-address-3.stella правильно вызвал ошибку.
-Тест unexpected-memory-address-1.stella правильно вызвал ошибку.
-Тест not-a-reference-5.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-3.stella правильно вызвал ошибку.
-Тест ambiguous-reference-type-1.stella правильно вызвал ошибку.
-Тест unexpected-memory-address-4.stella правильно вызвал ошибку.
-Тест not-a-reference-2.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-4.stella правильно вызвал ошибку.
-Тест unexpected-memory-address-2.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-2.stella правильно вызвал ошибку.
-Тест not-a-reference-4.stella правильно вызвал ошибку.
+Тест ambiguous-reference-type-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_REFERENCE_TYPE
+Тест not-a-reference-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_REFERENCE
+Тест not-a-reference-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_REFERENCE
+Тест not-a-reference-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_REFERENCE
+Тест not-a-reference-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_REFERENCE
+Тест not-a-reference-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_REFERENCE
+Тест unexpected-memory-address-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_REFERENCE_TYPE
+Тест unexpected-memory-address-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_REFERENCE_TYPE
+Тест unexpected-memory-address-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_REFERENCE_TYPE
+Тест unexpected-memory-address-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_REFERENCE_TYPE
+Тест unexpected-type-for-expression-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 
 Запуск тестов в директории: tests/pairs/well-typed
-Тест pairs-4.stella пройден успешно.
-Тест pairs-6.stella пройден успешно.
-Тест pairs-2.stella пройден успешно.
-Тест pairs-5.stella пройден успешно.
-Тест pairs-3.stella пройден успешно.
 Тест pairs-1.stella пройден успешно.
+Тест pairs-2.stella пройден успешно.
+Тест pairs-3.stella пройден успешно.
+Тест pairs-4.stella пройден успешно.
+Тест pairs-5.stella пройден успешно.
+Тест pairs-6.stella пройден успешно.
 
 Запуск тестов в директории: tests/pairs/ill-typed
-Тест bad-pairs-11.stella правильно вызвал ошибку.
-Тест bad-pairs-1.stella правильно вызвал ошибку.
-Тест bad-pairs-3.stella правильно вызвал ошибку.
-Тест bad-pairs-13.stella правильно вызвал ошибку.
-Тест bad-pairs-7.stella правильно вызвал ошибку.
-Тест bad-pairs-17.stella правильно вызвал ошибку.
-Тест bad-pairs-15.stella правильно вызвал ошибку.
-Тест bad-pairs-9.stella правильно вызвал ошибку.
-Тест bad-pairs-5.stella правильно вызвал ошибку.
-Тест bad-pairs-10.stella правильно вызвал ошибку.
-Тест bad-pairs-12.stella правильно вызвал ошибку.
-Тест bad-pairs-2.stella правильно вызвал ошибку.
-Тест bad-pairs-16.stella правильно вызвал ошибку.
-Тест bad-pairs-6.stella правильно вызвал ошибку.
-Тест bad-pairs-8.stella правильно вызвал ошибку.
-Тест bad-pairs-4.stella правильно вызвал ошибку.
-Тест bad-pairs-14.stella правильно вызвал ошибку.
+Тест bad-pairs-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-10.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-11.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-12.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-pairs-13.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-14.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-15.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_TUPLE
+Тест bad-pairs-16.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-17.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-pairs-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_TUPLE_INDEX_OUT_OF_BOUNDS
+Тест bad-pairs-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_TUPLE
+Тест bad-pairs-6.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-7.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-8.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pairs-9.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_TUPLE
 
 Запуск тестов в директории: tests/tuples/well-typed
 Тест tuples-1.stella пройден успешно.
 
 Запуск тестов в директории: tests/tuples/ill-typed
-Тест bad-tuples-2.stella правильно вызвал ошибку.
-Тест bad-tuples-1.stella правильно вызвал ошибку.
-Тест bad-tuples-3.stella правильно вызвал ошибку.
+Тест bad-tuples-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-tuples-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_TUPLE_INDEX_OUT_OF_BOUNDS
+Тест bad-tuples-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_TUPLE
 
 Запуск тестов в директории: tests/exceptions/well-typed
-Тест panic-2.stella пройден успешно.
-Тест try-with-2.stella пройден успешно.
-Тест throw-1.stella пройден успешно.
-Тест try-catch-2.stella пройден успешно.
-Тест panic-3.stella пройден успешно.
-Тест throw-2.stella пройден успешно.
-Тест try-with-1.stella пройден успешно.
 Тест panic-1.stella пройден успешно.
+Тест panic-2.stella пройден успешно.
+Тест panic-3.stella пройден успешно.
+Тест throw-1.stella пройден успешно.
+Тест throw-2.stella пройден успешно.
 Тест try-catch-1.stella пройден успешно.
+Тест try-catch-2.stella пройден успешно.
+Тест try-with-1.stella пройден успешно.
+Тест try-with-2.stella пройден успешно.
 Тест open-variant-exceptions.stella пройден успешно.
 
 Запуск тестов в директории: tests/exceptions/ill-typed
-Тест unexpected-type-for-expression-throw-1.stella правильно вызвал ошибку.
-Тест ambiguous-panic-type-1.stella правильно вызвал ошибку.
-Тест exception-type-not-declared-try-catch.stella правильно вызвал ошибку.
-Тест ambiguous-throw-type-3.stella правильно вызвал ошибку.
-Тест ambiguous-throw-type-1.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-try-catch-2.stella правильно вызвал ошибку.
-Тест ambiguous-panic-type-3.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-try-with-3.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-try-with-1.stella правильно вызвал ошибку.
-Тест exception-type-not-declared-throw.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-try-catch-1.stella правильно вызвал ошибку.
-Тест ambiguous-throw-type-2.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-throw-2.stella правильно вызвал ошибку.
-Тест ambiguous-panic-type-2.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-try-catch-3.stella правильно вызвал ошибку.
-Тест unexpected-type-for-expression-try-with-2.stella правильно вызвал ошибку.
-Тест exception-type-not-declared-try-with.stella правильно вызвал ошибку.
-Тест ambiguous-panic-type-4.stella правильно вызвал ошибку.
-Тест open-variant-exceptions.stella правильно вызвал ошибку.
+Тест ambiguous-panic-type-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_PANIC_TYPE
+Тест ambiguous-panic-type-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_PANIC_TYPE
+Тест ambiguous-panic-type-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_PANIC_TYPE
+Тест ambiguous-panic-type-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест ambiguous-throw-type-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_PANIC_TYPE
+Тест ambiguous-throw-type-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_PANIC_TYPE
+Тест ambiguous-throw-type-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест exception-type-not-declared-throw.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест exception-type-not-declared-try-catch.stella правильно вызвал ошибку: TYPE ERROR: ERROR_EXCEPTION_TYPE_NOT_DECLARED
+Тест exception-type-not-declared-try-with.stella правильно вызвал ошибку: TYPE ERROR: ERROR_EXCEPTION_TYPE_NOT_DECLARED
+Тест unexpected-type-for-expression-throw-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_AMBIGUOUS_VARIANT_TYPE
+Тест unexpected-type-for-expression-throw-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_EXCEPTION_TYPE_NOT_DECLARED
+Тест unexpected-type-for-expression-try-catch-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-try-catch-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-try-catch-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-try-with-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-try-with-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест unexpected-type-for-expression-try-with-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест open-variant-exceptions.stella правильно вызвал ошибку: TYPE ERROR: ERROR_EXCEPTION_TYPE_NOT_DECLARED
 
 Запуск тестов в директории: tests/units/well-typed
 Тест ignore.stella пройден успешно.
@@ -301,63 +301,63 @@
 Тест test-2.stella пройден успешно.
 
 Запуск тестов в директории: tests/units/ill-typed
-Тест bad_ignore.stella правильно вызвал ошибку.
-Тест test-1.stella правильно вызвал ошибку.
-Тест test-3.stella правильно вызвал ошибку.
-Тест test-2.stella правильно вызвал ошибку.
+Тест bad_ignore.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест test-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 
 Запуск тестов в директории: tests/ascriptions/well-typed
-Тест good-pair.stella пройден успешно.
 Тест good-anonymous-function.stella пройден успешно.
+Тест good-pair.stella пройден успешно.
 
 Запуск тестов в директории: tests/ascriptions/ill-typed
-Тест bad-anonymous-function.stella правильно вызвал ошибку.
-Тест bad-pair.stella правильно вызвал ошибку.
+Тест bad-anonymous-function.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-pair.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 
 Запуск тестов в директории: tests/recursions/well-typed
-Тест general-recursion.stella пройден успешно.
-Тест fix.stella пройден успешно.
 Тест fix-2.stella пройден успешно.
+Тест fix.stella пройден успешно.
+Тест general-recursion.stella пройден успешно.
 
 Запуск тестов в директории: tests/recursions/ill-typed
-Тест two-parameters.stella правильно вызвал ошибку.
-Тест general-recursion.stella правильно вызвал ошибку.
-Тест divergent-param-and-return-types.stella правильно вызвал ошибку.
-Тест fix.stella правильно вызвал ошибку.
-Тест fix-2.stella правильно вызвал ошибку.
-Тест not-a-function.stella правильно вызвал ошибку.
+Тест divergent-param-and-return-types.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест fix-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест fix.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест general-recursion.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест not-a-function.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест two-parameters.stella правильно вызвал ошибку: TYPE ERROR: ERROR_INCORRECT_NUMBER_OF_ARGUMENTS
 
 Запуск тестов в директории: tests/let-bindings/well-typed
-Тест let-3.stella пройден успешно.
 Тест let-1.stella пройден успешно.
 Тест let-2.stella пройден успешно.
+Тест let-3.stella пройден успешно.
 Тест let-4.stella пройден успешно.
 
 Запуск тестов в директории: tests/let-bindings/ill-typed
-Тест bad-let-4.stella правильно вызвал ошибку.
-Тест bad-let-6.stella правильно вызвал ошибку.
-Тест bad-let-2.stella правильно вызвал ошибку.
-Тест bad-let-5.stella правильно вызвал ошибку.
-Тест bad-let-7.stella правильно вызвал ошибку.
-Тест bad-let-3.stella правильно вызвал ошибку.
-Тест bad-let-1.stella правильно вызвал ошибку.
+Тест bad-let-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-let-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-let-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-let-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-let-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NOT_A_FUNCTION
+Тест bad-let-6.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-let-7.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 
 Запуск тестов в директории: tests/sum-types/well-typed
+Тест sum-types-1.stella пройден успешно.
 Тест sum-types-2.stella пройден успешно.
 Тест sum-types-3.stella пройден успешно.
-Тест sum-types-1.stella пройден успешно.
 
 Запуск тестов в директории: tests/sum-types/ill-typed
-Тест bad-sum-types-11.stella правильно вызвал ошибку.
-Тест bad-sum-types-2.stella правильно вызвал ошибку.
-Тест bad-sum-types-13.stella правильно вызвал ошибку.
-Тест bad-sum-types-6.stella правильно вызвал ошибку.
-Тест bad-sum-types-4.stella правильно вызвал ошибку.
-Тест bad-sum-types-8.stella правильно вызвал ошибку.
-Тест bad-sum-types-10.stella правильно вызвал ошибку.
-Тест bad-sum-types-1.stella правильно вызвал ошибку.
-Тест bad-sum-types-12.stella правильно вызвал ошибку.
-Тест bad-sum-types-3.stella правильно вызвал ошибку.
-Тест bad-sum-types-7.stella правильно вызвал ошибку.
-Тест bad-sum-types-5.stella правильно вызвал ошибку.
-Тест bad-sum-types-9.stella правильно вызвал ошибку.
+Тест bad-sum-types-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-10.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-11.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-12.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-13.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NONEXHAUSTIVE_MATCH_PATTERNS
+Тест bad-sum-types-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-6.stella правильно вызвал ошибку: TYPE ERROR: ERROR_ILLEGAL_EMPTY_MATCHING
+Тест bad-sum-types-7.stella правильно вызвал ошибку: TYPE ERROR: ERROR_ILLEGAL_EMPTY_MATCHING
+Тест bad-sum-types-8.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-9.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
