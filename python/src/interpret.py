@@ -503,7 +503,7 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
                     type_env[var_name_inl] = inl_var_type
                     inl_body_type = handle_expr_context(inl_case.expr())
                 else:
-                    type_error(ERROR_UNEXPECTED_PATTERN_FOR_TYPE)
+                    type_error(ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION)
 
                 if isinstance(inr_case.pattern(), stellaParser.PatternInrContext):
                     var_name_inr = inr_case.pattern().pattern().getText()

@@ -348,16 +348,16 @@
 Тест sum-types-3.stella пройден успешно.
 
 Запуск тестов в директории: tests/sum-types/ill-typed
-Тест bad-sum-types-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
-Тест bad-sum-types-10.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-1.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-10.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 Тест bad-sum-types-11.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 Тест bad-sum-types-12.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 Тест bad-sum-types-13.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
-Тест bad-sum-types-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
-Тест bad-sum-types-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-2.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-3.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 Тест bad-sum-types-4.stella правильно вызвал ошибку: TYPE ERROR: ERROR_NONEXHAUSTIVE_MATCH_PATTERNS
 Тест bad-sum-types-5.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
 Тест bad-sum-types-6.stella правильно вызвал ошибку: TYPE ERROR: ERROR_ILLEGAL_EMPTY_MATCHING
 Тест bad-sum-types-7.stella правильно вызвал ошибку: TYPE ERROR: ERROR_ILLEGAL_EMPTY_MATCHING
-Тест bad-sum-types-8.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
-Тест bad-sum-types-9.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_PATTERN_FOR_TYPE
+Тест bad-sum-types-8.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
+Тест bad-sum-types-9.stella правильно вызвал ошибку: TYPE ERROR: ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION
