@@ -470,6 +470,10 @@ def handle_expr_context(ctx: stellaParser.ExprContext):
         case stellaParser.MatchContext():
             expr_type = handle_expr_context(ctx.expr())
 
+            match_cases = ctx.matchCase()
+            if len(match_cases) < 2:
+                type_error(ERROR_NONEXHAUSTIVE_MATCH_PATTERNS)
+
             if isinstance(expr_type, SumType):
                 inl_case, inr_case = ctx.matchCase()
 
